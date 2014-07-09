@@ -9,3 +9,7 @@ See `man zshexpn` for "Parameter Expansion Flags"
 - `${(z)foo}`: split the result of the expansion into words
 
 # Parameter expansion using history modifier: ${foo:HERE}
+
+# References
+
+- http://qiita.com/mollifier/items/26a9ddcb7470f539e575
