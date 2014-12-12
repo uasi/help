@@ -1,3 +1,7 @@
+# Key Bindings
+
+- `Esc-.` or `Esc-_`: insert the last word of the previous command
+
 # Parameter expansion: ${foo HERE}
 
 See `man zshexpn` for "PARAMETER EXPANSION"
