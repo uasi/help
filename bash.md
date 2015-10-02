@@ -2,6 +2,8 @@
 
 https://github.com/progrium/bashstyle
 
+http://mywiki.wooledge.org/Quotes
+
 # Extended Globbing
 
 See http://www.linuxjournal.com/content/bash-extended-globbing
@@ -21,3 +23,7 @@ To enable extended glob, `shopt -s extglob` or exec bash with `-O extglob`.
 ## Pitfalls
 
 Don't do `*!(.jpg|gif)`, do `!(*.jpg|*.gif)`.
+
+# Get dirname
+
+`$(cd "$(dirname "$BASH_SOURCE")"; pwd)`
