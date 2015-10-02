@@ -19,3 +19,15 @@ without switching between branches.
 Cut a series of commits and join it on "base", then check out "last-commit".
 In other words, `git rebase --onto` rewrites the first commit
 to make its parent to be "base".
+
+## See unpushed commits
+
+If you want to see all commits on all branches that aren't pushed yet, you might be looking for something like this:
+
+    git log --branches --not --remotes
+
+And if you only want to see the most recent commit on each branch, and the branch names, this:
+
+    git log --branches --not --remotes --simplify-by-decoration --decorate --oneline
+
+via http://stackoverflow.com/a/3338774/454997
