@@ -16,3 +16,9 @@ To compare two buffers, use `:diffthis` for both buffers.
 ## Deprecated commands, good for custom mappings
 
 - `[f`, `]f`  Same as `gf` (edit the file whose name is under the cursor)
+
+## Wrap existing text
+
+```
+:set textwidth=80
+```
