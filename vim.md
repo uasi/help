@@ -1,8 +1,10 @@
+# Vim
+
 ## :vimdiff
 
 To compare two buffers, use `:diffthis` for both buffers.
 
-## External commandS
+## External commands
 
 - `:{range}!{cmd} [arg]` Filter `{range}` lines through `{cmd}`
 
