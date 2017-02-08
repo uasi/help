@@ -2,7 +2,7 @@
 
 ## Print SSH key fingerprint
 
-   ssh-keygen -l -f /path/to/key
+    ssh-keygen -l -f /path/to/key
 
 ## Generate public key from private key
 
