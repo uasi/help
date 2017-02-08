@@ -31,3 +31,23 @@ And if you only want to see the most recent commit on each branch, and the branc
     git log --branches --not --remotes --simplify-by-decoration --decorate --oneline
 
 via http://stackoverflow.com/a/3338774/454997
+
+## Find merge commit which include a specific commit
+
+With git-when-merged:
+
+    # Prereq: brew install git-when-merged
+    # For available options, try `git-when-merged --help`, not `git when-merged --help`
+
+    git when-merged [-l] <commit>
+
+Or without it:
+
+    git log <specific-commit>..master --ancestry-path --merges --reverse
+
+via http://stackoverflow.com/questions/8475448/find-merge-commit-which-include-a-specific-commit
+
+On --ancestry-path, it is that:
+
+> When given a range of commits to display (e.g.  commit1..commit2 or commit2 ^commit1), only display commits that exist directly on the ancestry chain
+> between the commit1 and commit2, i.e. commits that are both descendants of commit1, and ancestors of commit2.
