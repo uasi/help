@@ -51,3 +51,11 @@ On --ancestry-path, it is that:
 
 > When given a range of commits to display (e.g.  commit1..commit2 or commit2 ^commit1), only display commits that exist directly on the ancestry chain
 > between the commit1 and commit2, i.e. commits that are both descendants of commit1, and ancestors of commit2.
+
+## Caveats on log -G
+
+It seems it cannot find changes introduced in a merge commit.
+
+    Running `git log -G RAW_BODY_MAXIMUM_LENGTH` in increments/Qiita prints two commits,
+    but another commit 14ffb4bea180fdce77762ac6b52230a2ac7796c0 does contain a change on
+    RAW_BODY_MAXIMUM_LENGTH.
